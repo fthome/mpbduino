@@ -1,0 +1,36 @@
+{
+	"extensionName": "Pbduino",
+	"description": "A Extension for Pierron PB100, PB200 and PB300.(UNDER CONSTRUCTION!)",
+	"version": "0.0.1",
+	"author": "fthome@pierron.fr",
+	"homepage": "https://www.pierron.fr",
+	"sort":0,
+	"javascriptURL":"js/pbduino.js",
+  	"firmware":"1.0",
+  	"extensionPort":0,
+	"tags" : "makeblock,pbduino, pierron, PB100, PB200, PB300",
+	"blockSpecs": [
+		[
+			"w",
+			"LED( %d.leds , %d.onoff )",
+			"led",
+			"VERT",
+			"ON",
+			{
+				"setup":"pinMode({0},OUTPUT); \n",
+				"inc":"",
+				"def":"",
+				"work":"digitalWrite({0},{1});\n",
+				"loop":""
+			}
+		],
+	],
+	"menus": {
+		"onoff":["ON","OFF"],
+		"leds":["VERT","ROUGE"]
+	},
+	"values":{
+		"ON":1, "OFF":0,
+		"VERT":2, "ROUGE":4
+	},
+}
