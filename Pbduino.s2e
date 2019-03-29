@@ -1,7 +1,7 @@
 {
 	"extensionName": "Pbduino",
 	"description": "A Extension for Pierron PB100, PB200 and PB300.(UNDER CONSTRUCTION!)",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "fthome@pierron.fr",
 	"homepage": "https://www.pierron.fr",
 	"sort":0,
@@ -12,25 +12,40 @@
 	"blockSpecs": [
 		[
 			"w",
+			"INIT( %d.maquettes )",
+			"Init",
+			"PB100",
+			{
+			"inc":"#include \"pbduino.h\"\n",
+			"def":"PB{0} maquette; \n",
+			"setup":"maquette.init();\n",
+			"work":"",
+			"loop":""
+			}
+		],
+		[
+			"w",
 			"LED( %d.leds , %d.onoff )",
 			"led",
 			"VERT",
 			"ON",
 			{
-				"setup":"pinMode({0},OUTPUT); \n",
 				"inc":"",
 				"def":"",
+				"setup":"pinMode({0},OUTPUT); \n",
 				"work":"digitalWrite({0},{1});\n",
 				"loop":""
 			}
 		],
 	],
 	"menus": {
+		"maquettes":["PB100", "PB200", "PB300"],
 		"onoff":["ON","OFF"],
 		"leds":["VERT","ROUGE"]
 	},
 	"values":{
+		"PB100":100,"PB200":200,"PB300":300,
 		"ON":1, "OFF":0,
-		"VERT":2, "ROUGE":4
+		"VERT":2, "ROUGE":4,
 	},
 }
