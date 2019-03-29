@@ -32,7 +32,7 @@
 			{
 				"inc":"",
 				"def":"",
-				"setup":"pinMode({0},OUTPUT); \n",
+				"setup":"",
 				"work":"digitalWrite({0},{1});\n",
 				"loop":""
 			}
