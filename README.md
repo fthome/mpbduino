@@ -19,7 +19,7 @@ Cett extension est basée sur la bibliothèque pbduino (https://github.com/fthom
 
 ## Installation
 
-Utiliser le gestionaire d'extensions de mBlock 3
+Utiliser le gestionnaire d'extensions de mBlock 3
 
 ## Example
 
