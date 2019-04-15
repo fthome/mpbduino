@@ -15,7 +15,7 @@ Une extension pour mBlock 3 (http://www.mblock.cc/software-1/mblock/mblock3/) po
 Ces maquettes à base d'arduino nano sont commercialisées par la société Pierron (https://www.pierron.fr/)
 en collaboration avec Patrice Buffet qui en a conçu le principe et développé la pédagogie.
 
-Cett extension est basée sur la bibliothèque pbduino (https://github.com/fthome/Pbduino)
+Cette extension est basée sur la bibliothèque pbduino (https://github.com/fthome/Pbduino)
 
 ## Installation
 
